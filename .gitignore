@@ -1,0 +1,62 @@
+# Archivos del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Backups y temporales
+*.bak
+*.tmp
+*.temp
+*~
+.#*
+
+# Logs
+*.log
+
+# Node.js (si se añaden ejemplos futuros)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (si se añaden ejemplos futuros)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.venv/
+
+# Build outputs (si se añaden ejemplos futuros)
+dist/
+build/
+*.o
+*.exe
+*.out
+*.class
+*.jar
+
+# Archivos específicos del proyecto Oracle (no incluir en este repo)
+*.sql
+*.env
+.env.*
+basedatos.sql
+contenido.txt
+oracle_*.ipynb
+requirements.txt
