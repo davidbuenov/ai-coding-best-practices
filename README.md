@@ -7,6 +7,9 @@ Este documento agrupa en un solo lugar las guías y prompts para generar código
 ## Tabla de contenidos
 
 - [Proposito](#proposito)
+- [La Filosofía: Colaboración Abierta](#la-filosofía-colaboración-abierta)
+  - [Tu Opinión Importa](#tu-opinión-importa)
+  - [Cómo Puedes Contribuir](#cómo-puedes-contribuir)
 - [Contenido](#contenido)
 - [Guias por Lenguaje](#guias-por-lenguaje)
 - [Requisitos de Versiones](#requisitos-de-versiones)
@@ -22,6 +25,41 @@ Este documento agrupa en un solo lugar las guías y prompts para generar código
 - Ayudar a estudiantes y profesionales a producir código moderno, limpio y mantenible.
 - Estandarizar reglas que faciliten a las IAs sugerir y modificar código correctamente.
 - Proveer prompts con delimitadores para un copiado/pegado sin errores.
+
+---
+
+## La Filosofía: Colaboración Abierta
+
+Este repositorio **no pretende ser la verdad absoluta** ni un manual cerrado. Al contrario, es un proyecto vivo que debe evolucionar con:
+
+- Las nuevas versiones de lenguajes y frameworks
+- Las tendencias emergentes en desarrollo de software
+- Las experiencias y conocimientos de la comunidad
+- Los casos de uso reales que encuentran los desarrolladores
+
+### Tu Opinión Importa
+
+Estoy completamente abierto a:
+
+✅ **Sugerencias de mejora**: ¿Crees que falta algo importante? ¿Hay alguna práctica que debería añadirse o modificarse?
+
+✅ **Nuevos lenguajes o frameworks**: ¿Trabajas con tecnologías que no están incluidas? Me encantaría expandir el repositorio.
+
+✅ **Correcciones**: Si encuentras algo incorrecto o desactualizado, por favor házmelo saber.
+
+✅ **Casos de uso**: Comparte cómo estás utilizando estas guías y qué resultados estás obteniendo.
+
+✅ **Pull requests**: El repositorio está abierto a contribuciones directas. Si quieres añadir contenido o mejorar algo, ¡adelante!
+
+### Cómo Puedes Contribuir
+
+Hay varias formas de participar:
+
+1. **Abre un issue** en GitHub con tus sugerencias o comentarios
+2. **Crea un pull request** con tus mejoras o nuevas guías
+3. **Comparte tu experiencia** sobre cómo estás usando estas guías con herramientas de IA
+4. **Dale una estrella** ⭐ al repositorio si te parece útil
+5. **Difunde el proyecto** para que llegue a más desarrolladores
 
 ---
 
