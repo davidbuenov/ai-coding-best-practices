@@ -72,6 +72,7 @@ Hay varias formas de participar:
 
 ---
 
+
 ## Guias por Lenguaje
 
 - Java (17+/21): `java/buenaspracticas-java.md`
@@ -113,10 +114,16 @@ Hay varias formas de participar:
   - Validaciones de versión y notas pedagógicas
   - Incluye prompt completo y corto con delimitadores
 
+
 - PHP (8.2–8.4): `php/buenaspracticas-php.md`
   - `strict_types=1`, tipos unión/intersección, propiedades tipadas, readonly, promoted props
   - Enums (8.1+), match, nullsafe, `#[Override]` (8.3+), PDO con transacciones y SQL parametrizado
   - Incluye prompt completo y corto con delimitadores
+
+- Mermaid (diagramas como código): `mermaid/buenaspracticas-mermaid.md`
+  - Flowcharts, sequence, gantt, class, ER, state, pie, quadrant, timeline, user journey
+  - Prompts para IA, integración con Markdown, GitHub, VS Code, Notion, Docusaurus, MkDocs
+  - Checklist, ejemplos BIEN/MAL, validación y preview
 
 ---
 
@@ -148,6 +155,7 @@ Hay varias formas de participar:
 - `/python/buenaspracticas-python.md`
 - `/php/buenaspracticas-php.md`
 - `/docs/` (diagrama y notas pedagógicas)
+- `/mermaid/buenaspracticas-mermaid.md`
 
 ---
 

@@ -1,0 +1,12 @@
+%%{init: {'theme':'default'}}%%
+%%{css: '.mermaid { background-color: #fff !important; }'}%%
+classDiagram
+    class Usuario {
+        +string nombre
+        +string email
+        +login()
+    }
+    class Admin {
+        +string permisos
+    }
+    Usuario <|-- Admin

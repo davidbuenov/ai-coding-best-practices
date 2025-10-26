@@ -1,0 +1,10 @@
+%%{init: {'theme':'default'}}%%
+%%{css: '.mermaid { background-color: #fff !important; }'}%%
+sequenceDiagram
+    participant Usuario
+    participant API
+    participant DB
+    Usuario->>API: Solicita datos
+    API->>DB: Consulta
+    DB-->>API: Respuesta
+    API-->>Usuario: Devuelve datos

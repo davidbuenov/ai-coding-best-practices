@@ -1,0 +1,9 @@
+%%{init: {'theme':'default'}}%%
+%%{css: '.mermaid { background-color: #fff !important; }'}%%
+stateDiagram-v2
+    [*] --> Nuevo
+    Nuevo --> EnProceso
+    EnProceso --> Completado
+    EnProceso --> Cancelado
+    Cancelado --> [*]
+    Completado --> [*]

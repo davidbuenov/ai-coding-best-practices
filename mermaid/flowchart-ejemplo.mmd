@@ -1,0 +1,8 @@
+%%{init: {'theme':'default'}}%%
+%%{css: '.mermaid { background-color: #fff !important; }'}%%
+flowchart TD
+    Start --> Decision{¿Aprobado?}
+    Decision -- Sí --> Tarea1[Procesar pedido]
+    Decision -- No --> Tarea2[Revisar datos]
+    Tarea1 --> Fin
+    Tarea2 --> Fin

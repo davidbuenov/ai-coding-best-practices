@@ -1,0 +1,13 @@
+%%{init: {'theme':'default'}}%%
+%%{css: '.mermaid { background-color: #fff !important; }'}%%
+erDiagram
+    CLIENTE ||--o{ PEDIDO : realiza
+    PEDIDO }|..|{ PRODUCTO : contiene
+    CLIENTE {
+        string nombre
+        string email
+    }
+    PRODUCTO {
+        string nombre
+        float precio
+    }
