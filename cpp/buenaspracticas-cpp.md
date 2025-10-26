@@ -8,18 +8,19 @@ Este documento resume prácticas profesionales para escribir C++ moderno, robust
 
 - [🎯 Objetivo](#-objetivo)
 - [🆕 Requisitos y versiones](#-requisitos-y-versiones)
-- [1) RAII y Smart Pointers](#1-raii-y-smart-pointers)
-- [2) Tipos Fuertes: enum class y using](#2-tipos-fuertes-enum-class-y-using)
-- [3) string_view y span](#3-string_view-y-span)
-- [4) Ranges y Algoritmos (C++20)](#4-ranges-y-algoritmos-c20)
-- [5) optional, variant y expected (C++23)](#5-optional-variant-y-expected-c23)
-- [6) UN SOLO return + Guard Clauses](#6-un-solo-return--guard-clauses)
-- [7) Errores: Excepciones vs expected](#7-errores-excepciones-vs-expected)
-- [8) Documentación con Doxygen](#8-documentación-con-doxygen)
+- [🔧 Características de C++ Moderno](#-características-de-c-moderno)
+  - [1️⃣ RAII y Smart Pointers](#1️⃣-raii-y-smart-pointers)
+  - [2️⃣ Tipos Fuertes: enum class y using](#2️⃣-tipos-fuertes-enum-class-y-using)
+  - [3️⃣ string_view y span](#3️⃣-string_view-y-span)
+  - [4️⃣ Ranges y Algoritmos (C++20)](#4️⃣-ranges-y-algoritmos-c20)
+  - [5️⃣ optional, variant y expected (C++23)](#5️⃣-optional-variant-y-expected-c23)
+  - [6️⃣ UN SOLO return + Guard Clauses](#6️⃣-un-solo-return--guard-clauses)
+  - [7️⃣ Errores: Excepciones vs expected](#7️⃣-errores-excepciones-vs-expected)
+  - [8️⃣ Documentación con Doxygen](#8️⃣-documentación-con-doxygen)
 - [🤖 Prompt de Sistema para IAs Generativas (C++)](#-prompt-de-sistema-para-ias-generativas-c)
-    - [Cómo usar](#cómo-usar)
-    - [Versión completa del prompt](#versión-completa-del-prompt)
-    - [Versión corta del prompt](#versión-corta-del-prompt)
+  - [Cómo usar](#cómo-usar)
+  - [Versión completa del prompt](#versión-completa-del-prompt)
+  - [Versión corta del prompt](#versión-corta-del-prompt)
 - [✅ Checklist de C++ Moderno](#-checklist-de-c-moderno)
 - [📚 Referencias](#-referencias)
 
@@ -45,7 +46,15 @@ C++ moderno ofrece herramientas potentes para reducir errores y mejorar la clari
 
 ---
 
-## 1) RAII y Smart Pointers
+## 🔧 Características de C++ Moderno
+
+- C++20: ranges, concepts, modules (soporte parcial), `<=> operator`
+- C++23: `std::expected`, deducing this, multidimensional subscript
+- Principios clave: RAII, tipos fuertes, zero-cost abstractions, ownership claro
+
+---
+
+## 1️⃣ RAII y Smart Pointers
 
 ```cpp
 // ✅ BIEN: RAII con unique_ptr
@@ -73,7 +82,7 @@ void ejemplo_mal() {
 
 ---
 
-## 2) Tipos Fuertes: enum class y using
+## 2️⃣ Tipos Fuertes: enum class y using
 
 ```cpp
 // ✅ BIEN: enum class con ámbito y tipo subyacente
@@ -96,7 +105,7 @@ enum EstadoMal { Ok, Error, Desconocido }; // colisiona con otros símbolos
 
 ---
 
-## 3) string_view y span
+## 3️⃣ string_view y span
 
 ```cpp
 #include <string_view>
@@ -125,7 +134,7 @@ void ejemplo_views() {
 
 ---
 
-## 4) Ranges y Algoritmos (C++20)
+## 4️⃣ Ranges y Algoritmos (C++20)
 
 ```cpp
 #include <ranges>
@@ -156,7 +165,7 @@ std::vector<int> cuadrados_pares_mal(const std::vector<int>& xs) {
 
 ---
 
-## 5) optional, variant y expected (C++23)
+## 5️⃣ optional, variant y expected (C++23)
 
 ```cpp
 #include <optional>
@@ -195,7 +204,7 @@ std::expected<int, Error> parse_int_expected(std::string_view s) {
 
 ---
 
-## 6) UN SOLO return + Guard Clauses
+## 6️⃣ UN SOLO return + Guard Clauses
 
 ```cpp
 // ✅ BIEN: validaciones planas y un único return
@@ -230,7 +239,11 @@ Resultado crear_usuario_mal(std::string_view nombre, int edad) {
 
 ---
 
-## 7) Errores: Excepciones vs expected
+---
+
+## 7️⃣ Errores: Excepciones vs expected
+
+```cpp
 
 - Usa excepciones para errores excepcionales: fallos de IO, precondiciones rotas, invariantes
 - Usa `std::expected` (o alternativa) para flujos normales donde error es posible y frecuente
@@ -249,7 +262,7 @@ std::expected<Usuario, Error> registrar(std::string_view nombre, int edad) {
 
 ---
 
-## 8) Documentación con Doxygen
+## 8️⃣ Documentación con Doxygen
 
 ```cpp
 /// Crea un usuario válido.

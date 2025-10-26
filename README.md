@@ -113,6 +113,11 @@ Hay varias formas de participar:
   - Validaciones de versión y notas pedagógicas
   - Incluye prompt completo y corto con delimitadores
 
+- PHP (8.2–8.4): `php/buenaspracticas-php.md`
+  - `strict_types=1`, tipos unión/intersección, propiedades tipadas, readonly, promoted props
+  - Enums (8.1+), match, nullsafe, `#[Override]` (8.3+), PDO con transacciones y SQL parametrizado
+  - Incluye prompt completo y corto con delimitadores
+
 ---
 
 ---
@@ -125,6 +130,7 @@ Hay varias formas de participar:
 - Python: 3.10+
 - TypeScript: 5.x + Node 20+
 - SQL: PostgreSQL/MySQL/SQLite modernos; Oracle 12c+
+- PHP: 8.2+ (ideal 8.4)
 
 ---
 
@@ -140,6 +146,7 @@ Hay varias formas de participar:
 - `/csharp/buenaspracticas-csharp.md`
 - `/csharp/unity/buenaspracticas-unity-csharp.md`
 - `/python/buenaspracticas-python.md`
+- `/php/buenaspracticas-php.md`
 - `/docs/` (diagrama y notas pedagógicas)
 
 ---

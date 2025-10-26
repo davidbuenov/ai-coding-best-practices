@@ -8,18 +8,19 @@ Esta guía recoge prácticas profesionales de Python pensadas para trabajar bien
 
 - [🎯 Objetivo](#-objetivo)
 - [🧩 Requisitos](#-requisitos)
-- [1) Tipado Moderno y Data Models](#1-tipado-moderno-y-data-models)
-- [2) Result Pattern (éxito/error tipado)](#2-result-pattern-éxitoerror-tipado)
-- [3) UN SOLO return + Guard Clauses](#3-un-solo-return--guard-clauses)
-- [4) Context Managers y Recursos](#4-context-managers-y-recursos)
-- [5) Match/Case y Enums](#5-matchcase-y-enums)
-- [6) Docstrings y Precondiciones](#6-docstrings-y-precondiciones)
-- [7) Manejo de Excepciones Específicas](#7-manejo-de-excepciones-específicas)
-- [8) "Lección del Mundo Real": Versiones](#8-lección-del-mundo-real-versiones)
+- [🆕 Características de Python Moderno](#-características-de-python-moderno)
+  - [1️⃣ Tipado Moderno y Data Models](#1️⃣-tipado-moderno-y-data-models)
+  - [2️⃣ Result Pattern (éxito/error tipado)](#2️⃣-result-pattern-éxitoerror-tipado)
+  - [3️⃣ UN SOLO return + Guard Clauses](#3️⃣-un-solo-return--guard-clauses)
+  - [4️⃣ Context Managers y Recursos](#4️⃣-context-managers-y-recursos)
+  - [5️⃣ Match/Case y Enums](#5️⃣-matchcase-y-enums)
+  - [6️⃣ Docstrings y Precondiciones](#6️⃣-docstrings-y-precondiciones)
+  - [7️⃣ Manejo de Excepciones Específicas](#7️⃣-manejo-de-excepciones-específicas)
+- [8️⃣ "Lección del Mundo Real": Versiones](#8️⃣-lección-del-mundo-real-versiones)
 - [🤖 Prompt de Sistema para IAs Generativas (Python)](#-prompt-de-sistema-para-ias-generativas-python)
-    - [Cómo usar](#cómo-usar)
-    - [Versión completa del prompt](#versión-completa-del-prompt)
-    - [Versión corta del prompt](#versión-corta-del-prompt)
+  - [Cómo usar](#cómo-usar)
+  - [Versión completa del prompt](#versión-completa-del-prompt)
+  - [Versión corta del prompt](#versión-corta-del-prompt)
 - [✅ Checklist de Código Python Profesional](#-checklist-de-código-python-profesional)
 - [📚 Referencias](#-referencias)
 
@@ -42,7 +43,16 @@ Esta guía recoge prácticas profesionales de Python pensadas para trabajar bien
 
 ---
 
-## 1) Tipado Moderno y Data Models
+## 🆕 Características de Python Moderno
+
+- Python 3.10: tipos unión con `X | Y` (PEP 604), `match/case` (PEP 634)
+- Tipado más expresivo: `TypedDict`, `TypeAlias`, `Literal`, `dataclasses(slots=True)`
+- Patrones funcionales y excepciones específicas fomentadas
+- Mínimo recomendado: Python 3.10 (3.11+ mejora rendimiento y typing)
+
+---
+
+## 1️⃣ Tipado Moderno y Data Models
 
 ```python
 from __future__ import annotations
@@ -72,7 +82,7 @@ usuario = {"id": 1, "nombre": "Ana", "rol": "loquesea"}  # rol inválido
 
 ---
 
-## 2) Result Pattern (éxito/error tipado)
+## 2️⃣ Result Pattern (éxito/error tipado)
 
 ```python
 from dataclasses import dataclass
@@ -108,7 +118,7 @@ def parse_int_mal(texto: str):
 
 ---
 
-## 3) UN SOLO return + Guard Clauses
+## 3️⃣ UN SOLO return + Guard Clauses
 
 ```python
 # ✅ BIEN: validaciones planas y un único return
@@ -134,7 +144,7 @@ def promedio_mal(xs: list[float]) -> float:
 
 ---
 
-## 4) Context Managers y Recursos
+## 4️⃣ Context Managers y Recursos
 
 ```python
 # ✅ BIEN: with para archivos
@@ -157,7 +167,7 @@ def leer_lineas_mal(ruta: str) -> list[str]:
 
 ---
 
-## 5) Match/Case y Enums
+## 5️⃣ Match/Case y Enums
 
 ```python
 from enum import Enum
@@ -185,7 +195,7 @@ def describir(obj: object) -> str:
 
 ---
 
-## 6) Docstrings y Precondiciones
+## 6️⃣ Docstrings y Precondiciones
 
 ```python
 # ✅ BIEN: Google-style docstring con validaciones
@@ -214,7 +224,7 @@ def filtrar_positivos(xs: Iterable[int]) -> list[int]:
 
 ---
 
-## 7) Manejo de Excepciones Específicas
+## 7️⃣ Manejo de Excepciones Específicas
 
 ```python
 class UsuarioNoEncontrado(Exception):
@@ -240,7 +250,7 @@ def crear_usuario(email: str, repo) -> Usuario:
 
 ---
 
-## 8) "Lección del Mundo Real": Versiones
+## 8️⃣ "Lección del Mundo Real": Versiones
 
 En este proyecto detectamos una discrepancia entre el README (decía 3.8+) y el código (usaba 3.10+). Conclusión:
 
