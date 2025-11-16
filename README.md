@@ -97,6 +97,9 @@ Hay varias formas de participar:
   - TS estricto, ESM, uniones discriminadas/Result, Zod en entradas, AbortController/timeout
   - Error cause + logging estructurado, env validado, Vitest/ESLint/Prettier, TSDoc
 
+- Node.js (JavaScript, Node 20+): `nodejs/buenaspracticas-nodejs.md`
+  - ESM por defecto, validación de entorno (Zod), logging estructurado (pino), Result pattern Ok/Err
+  - Seguridad básica (helmet, rate limit), AbortController para timeouts, graceful shutdown
 - SQL (general: PostgreSQL/MySQL/SQLite): `sql/buenaspracticas-sql.md`
   - Consultas parametrizadas, CTEs/window functions, índices, EXPLAIN/ANALYZE, paginación keyset, migraciones
 
@@ -125,6 +128,10 @@ Hay varias formas de participar:
   - Prompts para IA, integración con Markdown, GitHub, VS Code, Notion, Docusaurus, MkDocs
   - Checklist, ejemplos BIEN/MAL, validación y preview
 
+  - Prompts listo (completo/corto), BIEN/MAL en errores, configuración y streams
+  - Node.js Firebase Cloud Functions (JavaScript CommonJS 2nd gen): `nodejs/buenaspracticas-nodejs-firebase.md`
+    - Adaptación a entorno serverless, CommonJS, functions.logger, cold start, idempotencia, JSDoc
+
 ---
 
 ---
@@ -136,6 +143,7 @@ Hay varias formas de participar:
 - C#: .NET 8+; Unity 6.1
 - Python: 3.10+
 - TypeScript: 5.x + Node 20+
+- Node.js: 20+ (fetch nativo, AbortController, test runner)
 - SQL: PostgreSQL/MySQL/SQLite modernos; Oracle 12c+
 - PHP: 8.2+ (ideal 8.4)
 

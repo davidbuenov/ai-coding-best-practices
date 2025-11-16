@@ -5,8 +5,6 @@
 ¿Cuántas horas hemos perdido todos en PowerPoint, Visio o Lucidchart, arrastrando cajas, alineando flechas, cambiando colores? Esa era es historia. La técnica que les mostré brevemente antes con el diagrama de base de datos se puede aplicar a todo. Hablo de Mermaid.
 
 
-
-
 Podemos pedirle a la IA:
 
 - "Genera el código Mermaid para un flowchart que describa nuestro proceso de ventas."
