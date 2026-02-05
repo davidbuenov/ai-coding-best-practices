@@ -75,10 +75,19 @@ Hay varias formas de participar:
 
 ## Guias por Lenguaje
 
-- Java (17+/21): `java/buenaspracticas-java.md`
+- Java 17 (base): `java/buneaspracticas-java17.md`
   - Records, sealed classes, pattern matching, Optional, Streams, try-with-resources
   - Regla de UN SOLO return + guard clauses
   - Incluye prompt completo y corto con delimitadores
+- Java 21 (UMA · primeros cursos): `java/buenaspracticas-java21-UMA.md`
+  - Enfoque didáctico con ejemplos BIEN/MAL y código típico de IA
+  - Explicación simple de Java 21 y checklist
+- Java 21 (Pro): `java/buenaspracticas-java21-pro.md`
+  - Reglas profesionales + concurrencia moderna + prompt reforzado
+- Java 21 (Pruebas unitarias): `java/buenaspracticas-java21-pruebasunitarias.md`
+  - AAA, given-when-then, JUnit 5, Mockito, @DisplayName, @Nested
+- Java 25 (Pro): `java/buenaspracticas-java25-pro.md`
+  - Novedades desde JDK 21 con ejemplos y guía profesional
 
 - C++ (C++20/23): `cpp/buenaspracticas-cpp.md`
   - RAII, smart pointers, enum class, using, string_view, span, ranges
@@ -100,6 +109,8 @@ Hay varias formas de participar:
 - Node.js (JavaScript, Node 20+): `nodejs/buenaspracticas-nodejs.md`
   - ESM por defecto, validación de entorno (Zod), logging estructurado (pino), Result pattern Ok/Err
   - Seguridad básica (helmet, rate limit), AbortController para timeouts, graceful shutdown
+- Node.js Firebase Cloud Functions (JavaScript CommonJS 2nd gen): `nodejs/buenaspracticas-nodejs-firebase.md`
+  - Adaptación a entorno serverless, CommonJS, functions.logger, cold start, idempotencia, JSDoc
 - SQL (general: PostgreSQL/MySQL/SQLite): `sql/buenaspracticas-sql.md`
   - Consultas parametrizadas, CTEs/window functions, índices, EXPLAIN/ANALYZE, paginación keyset, migraciones
 
@@ -128,17 +139,13 @@ Hay varias formas de participar:
   - Prompts para IA, integración con Markdown, GitHub, VS Code, Notion, Docusaurus, MkDocs
   - Checklist, ejemplos BIEN/MAL, validación y preview
 
-  - Prompts listo (completo/corto), BIEN/MAL en errores, configuración y streams
-  - Node.js Firebase Cloud Functions (JavaScript CommonJS 2nd gen): `nodejs/buenaspracticas-nodejs-firebase.md`
-    - Adaptación a entorno serverless, CommonJS, functions.logger, cold start, idempotencia, JSDoc
-
 ---
 
 ---
 
 ## Requisitos de Versiones
 
-- Java: 17+ (ideal 21 LTS)
+- Java: 17+ (ideal 25 LTS; 21 LTS válido)
 - C++: C++20+ (ideal C++23)
 - C#: .NET 8+; Unity 6.1
 - Python: 3.10+
@@ -151,7 +158,11 @@ Hay varias formas de participar:
 
 ## Estructura actual del repositorio (propuesta aplicada)
 
-- `/java/buenaspracticas-java.md`
+- `/java/buneaspracticas-java17.md`
+- `/java/buenaspracticas-java21-UMA.md`
+- `/java/buenaspracticas-java21-pro.md`
+- `/java/buenaspracticas-java21-pruebasunitarias.md`
+- `/java/buenaspracticas-java25-pro.md`
 - `/cpp/buenaspracticas-cpp.md`
 - `/cpp/buenaspracticas-unreal-cpp.md`
 - `/web/buenaspracticas-web.md`
@@ -162,7 +173,8 @@ Hay varias formas de participar:
 - `/csharp/unity/buenaspracticas-unity-csharp.md`
 - `/python/buenaspracticas-python.md`
 - `/php/buenaspracticas-php.md`
-- `/docs/` (diagrama y notas pedagógicas)
+- `/nodejs/buenaspracticas-nodejs.md`
+- `/nodejs/buenaspracticas-nodejs-firebase.md`
 - `/mermaid/buenaspracticas-mermaid.md`
 
 ---
